@@ -4,7 +4,7 @@ cd "`dirname "$0"`"
 #dotnet build -c Release inklecate/inklecate.csproj
 dotnet publish -c Release -r win-x86 --self-contained false inklecate/inklecate.csproj
 dotnet publish -c Release -r linux-x64 --self-contained false inklecate/inklecate.csproj
-#dotnet publish -c Release -r osx-x64 --self-contained false inklecate/inklecate.csproj
+dotnet publish -c Release -r osx-x64 --self-contained true inklecate/inklecate.csproj
 
 # Create folders
 mkdir -p ReleaseBinary
