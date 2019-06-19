@@ -85,6 +85,18 @@
             }
         },
         {
+            "label": "Build InkTestBed",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build",
+                "--configuration", "Debug",
+                "${workspaceFolder}/InkTestBed/InkTestBed.csproj"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": "none"
+        },
+        {
             "label": "Create ink-engine-runtime NuGet package",
             "type": "shell",
             "problemMatcher": "$msCompile",
